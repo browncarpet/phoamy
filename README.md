@@ -1,4 +1,4 @@
 phoamy
 ======
 
-Home Control
+Control
