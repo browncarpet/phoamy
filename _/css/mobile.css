@@ -1,0 +1,188 @@
+body { 
+	background-color:#000;
+	background-image:url(images/backgroundTile.png) !important;
+	background-repeat:repeat no-repeat;
+	color:#FFFFFF;
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Arial, sans-serif;
+	padding-left: 20px;
+ }
+
+
+.maxt a, .mint a, .smallmint a, .smallmaxt a {padding:10px;}
+
+.ui-btn-inner {border-top:none !important; }
+
+#shades, #music, #lights {text-align: center;}
+.button250 {width:250px; !important}
+.buttonTitle {font-size:30px; margin: 0px auto 5px;}
+.mode a {cursor:pointer}
+.temp {color:white; font-size: 48px; margin: 0px auto 5px;}
+h3.temp {font-size: 112px; width:100%; text-align: center; color:white;}
+.mint, .smallmint {color:#3333ff; margin-right:15px; font-size:24px;}
+p .mint, p .maxt {text-align:center; font-size: 76px; font-weight:bold;}
+a .smallmint:before {content: "Min "; color:#eee; font-weight:normal;}
+.maxt, .smallmaxt {color:#ff3333; font-size:24px;}
+a .smallmaxt:before {content: "Max "; color:#eee; font-weight:normal;}
+
+.mint button {width:100px;}
+
+.hvacName {color: #eee; font-size: 24px; width:100%; display:block; background-color:#222; padding: 5px 20px; margin: -10px 0 -10px -20px; overflow: hidden;}
+
+.ui-dialog .ui-responsive {text-align: center;}
+
+
+/***    Footer Icons    ***/
+
+.iconFooter .ui-btn .ui-btn-inner {
+    padding-top: 40px !important; 
+}
+
+.iconFooter .ui-btn .ui-btn-inner .ui-btn-text {
+    bottom: -3px !important; 
+}
+
+.iconFooter .ui-btn .ui-icon { 
+    width: 45px!important; 
+    height: 35px!important; 
+    margin-left: -24px !important; 
+    box-shadow: none!important; 
+    -moz-box-shadow: none!important; 
+    -webkit-box-shadow: none!important;
+    -webkit-border-radius: none !important;
+    border-radius: none !important; 
+}
+
+a[href="#locks"] .ui-icon { 
+    background-image: url(images/glyph-color.png);
+    background-position: -146px -294px;
+    background-repeat: no-repeat;
+}
+
+a[href="#climate"] .ui-icon { 
+    background-image: url(images/glyph-color.png);
+    background-position: -98px -486px;
+    background-repeat: no-repeat;
+}
+
+.musicControl div[data-role="content"] {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('BebasNeue-webfont.eot');
+    src: url('BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BebasNeue-webfont.woff') format('woff'),
+         url('BebasNeue-webfont.ttf') format('truetype'),
+         url('BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media only screen and (max-device-width: 1300px) {
+    p .mint, p .maxt {font-size: 54px; }
+    h3.temp {font-size: 84px;}
+}
+@media only screen and (device-width: 768px) {
+
+    .hvacStyle dd {margin-left:35px !important;}
+    .setpointrange {margin-left: 20px;}
+
+}
+
+#log {height: 10em; overflow-y: scroll; background-color: #aaa; width: 100%}
+
+#needRefresh {position:absolute; top: 0; left: 0; color:white; z-index:9999; width: 100%; height:100%; background-color:rgba(100,100,100,.8);}
+.doRefresh {position: fixed; width: 20%; top:40%; left: 40%; text-align: center;}
+
+#home {background:none;}
+#climate {background: url('images/therm_back.png') no-repeat bottom right fixed !important; }
+#shades, .shades {background: url('images/shades_back.png') no-repeat bottom right fixed !important; }
+
+#lights, .lights {background: url('images/lights_back.png') no-repeat bottom right fixed !important; }
+
+div.lights .ui-dialog-contain {max-width: 300px;}
+div.lights div div .ui-btn-inline, div.musicControl div div .ui-btn-inline {width:150px;}
+.shades, .music, .lights {text-align: center;}
+.ui-dialog-contain h3 {font-size: 2.5em; margin: 0.6em 0;}
+
+.floatRight {float:right;}
+.floatLeft {float:left;}
+.clear {clear:both;}
+
+#displayTime {
+    font-style: italic;
+    font-size: 3em;
+    color: rgba(57,107,158,.8);
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    text-align: right;
+    text-shadow:none;
+}
+
+#displayTime .time {
+    position:relative; 
+    font-size: .8em; 
+    bottom: -.4em !important; 
+    color:rgba(255,255,255,.7);
+    text-shadow:none;
+}
+
+.ui-slider .ui-btn-inner {
+    padding: 4px 0 0 0 !important;
+}
+.ui-slider-popup {
+    position: absolute !important;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 14px;
+    z-index: 100;
+    opacity: 0.8;
+    background-color:#666666;
+}
+.ui-slider .ui-btn-inner .ui-btn-text {
+    top: 10%;
+}
+a.ui-btn.ui-slider-handle {
+    margin: -20px 0 0 -15px;
+    height: 36px;
+    width:36px;
+}
+.ui-slider {
+    width:90% !important;
+    margin:40px 20px !important;
+}
+.ui-slider-input {
+    display: none !important;
+}
+
+
+/*** Music Control ***/
+
+#music, .musicControl {background: url('images/music_back.png') no-repeat bottom right fixed !important; }
+.musicControl div[data-role="content"] {
+    text-align: center;
+}
+
+.musicControl div[data-role="fieldcontain"] {
+    width: 300px;
+    margin: 5px auto;
+}
+
+.musicControl .ui-slider:before {
+    content: "Volume";
+    font-size: 24px;
+    text-align: left;
+    margin-top:-36px;
+    position: absolute;
+    color: rgba(255,255,255,.8);
+    font-style: italic;
+}
+
+.musicControl .floatLeft .ui-btn-text, .musicControl .floatRight .ui-btn-text {
+    font-size: 1.5em;
+}

@@ -1,0 +1,18 @@
+[lutron]
+
+#Family Room Shades
+~DEVICE 34,4,3 = comstar|drape5open
+~DEVICE 34,5,3 = comstar|drape5close
+#Master Bed Sun Shades
+~DEVICE 83,6,3 = comstar|drape9open&comstar|drape7open
+~DEVICE 83,7,3 = comstar|drape9close&comstar|drape7close
+#Master Bed Blackout Shades
+~DEVICE 83,1,3 = comstar|drape10open&comstar|drape4open
+~DEVICE 83,2,3 = comstar|drape10close&comstar|drape4close
+
+[comports]
+
+#RS232 Devices (comport, baud, timeout)
+comstar = 4,9600,1
+lutron = 5,9600,1
+audioa = 2,9600,1

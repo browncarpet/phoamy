@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>Home Control</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" href="_/css/jquery.mobile-1.2.0.min.css" />
+  <link rel="stylesheet" media="all" href="./_/css/mobile.css"/>
+  <script src="_/js/mustache.js"></script>
+  <script src="_/js/jquery-1.8.2.min.js"></script>
+  <script src="_/js/jquery.mobile-1.2.0.min.js"></script>
+  <script src="_/js/shades.js?v=1"> </script>
+  <script src="_/js/audioa.js"> </script>
+  <script src="./_/js/main.js?v=1"> </script>
+  
+
+
+   </head>
+   <body>
+      
+       <div id="home" data-role="page" data-theme="a">
+           
+           <div data-role="header" data-position="fixed" data-id="hc_header">
+               <h1>Home</h1>
+               <a href="#home" data-icon="home">Home</a>
+           </div>
+           
+           <div data-role="content">
+               
+           </div>
+           
+           <div data-role="footer" data-position="fixed" data-id="hc_footer">
+               <div data-role="navbar" >
+                   <ul>
+                       <li><a href="#shades">Shades</a></li> 
+                        <li><a href="#locks">Door Locks</a></li> 
+                        <li><a href="#music">Music</a></li> 
+                   </ul>
+               </div><!-- /navbar -->
+           </div>
+           
+       </div>
+       
+       <div id="climate" data-role="page" data-theme="a">
+           
+           <div data-role="header" data-position="fixed" data-id="hc_header">
+               <h1>Climate Control</h1>
+               <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+           </div>
+           
+           <div data-role="content">
+               <a href="#hvac01" data-role="button" data-rel="dialog" data-inline="true">
+                <span class="hvacName">Living Room</span><br/>
+                <span class="temp">77</span><br/>
+                <span class="smallmint">68</span><span class="smallmaxt">80</span>
+              </a>
+               <a href="#hvac02" data-role="button" data-rel="dialog" data-inline="true">
+                <span class="hvacName">Great Room</span><br/>
+                <span class="temp">78</span><br/>
+                <span class="smallmint">65</span><span class="smallmaxt">79</span>
+              </a>
+              <a href="#hvac03" data-role="button" data-rel="dialog" data-inline="true">
+                <span class="hvacName">Master Bed</span><br/>
+                <span class="temp">78</span><br/>
+                <span class="smallmint">65</span><span class="smallmaxt">79</span>
+              </a>
+           </div>
+           
+           <div data-role="footer" data-position="fixed" data-id="hc_footer">
+               <div data-role="navbar">
+                   <ul>
+                       <li><a href="#shades">Shades</a></li>
+                       <li><a href="#climate" data-icon="custom">Climate</a></li>
+                       <li><a href="#locks" data-icon="custom">Door Locks</a></li>
+                       <li><a href="#music">Music</a></li>
+                   </ul>
+               </div><!-- /navbar -->
+           </div>
+           
+       </div>
+       
+       
+
+       <div id="hvac01" data-role="page" data-theme="a">
+           
+           <div data-role="header">
+               <h1>Living Room</h1>
+           </div>
+           
+           <div data-role="content">
+              <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a">
+                  <p><span class="mint">65</span><br/>
+                    <button onclick='newSetPoint(this);'>+</button>
+                    <button onclick='newSetPoint(this);'>-</button>
+                  </p>
+                </div>
+                <div class="ui-block-b">
+                  <h3 class="temp">78</h3>
+                </div>
+                <div class="ui-block-c">
+                  <p><span class="maxt">80</span><br/>
+                    <button onclick='newSetPoint(this);'>+</button>
+                    <button onclick='newSetPoint(this);'>-</button>
+                  </p>
+                </div>
+              </div><!-- grid -->
+               <div data-role="navbar">
+                   <ul class="mode">
+                       <li><a href="#">Auto</a></li>
+                       <li><a href="#">Cool</a></li>
+                       <li><a href="#">Heat</a></li>
+                       <li><a href="#">Off</a></li>
+                   </ul>
+               </div>
+               <div style='text-align:center;'><button onclick='history.back();' data-inline="true">Done</button></div>
+           </div>           
+       </div><!-- /hvac -->
+       
+       <div id="hvac02" data-role="page" data-theme="a">
+           
+           <div data-role="header">
+               <h1>Great Room</h1>
+           </div>
+           
+           <div data-role="content">
+              <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a">
+                  <p><span class="mint">65</span><br/>
+                    <button onclick='newSetPoint(this);'>+</button>
+                    <button onclick='newSetPoint(this);'>-</button>
+                  </p>
+                </div>
+                <div class="ui-block-b">
+                  <h3 class="temp">78</h3>
+                </div>
+                <div class="ui-block-c">
+                  <p><span class="maxt">80</span><br/>
+                    <button onclick='newSetPoint(this);'>+</button>
+                    <button onclick='newSetPoint(this);'>-</button>
+                  </p>
+                </div>
+              </div><!-- grid -->
+               <div data-role="navbar">
+                   <ul class="mode">
+                       <li><a href="#">Auto</a></li>
+                       <li><a href="#">Cool</a></li>
+                       <li><a href="#">Heat</a></li>
+                       <li><a href="#">Off</a></li>
+                   </ul>
+               </div>
+               <div style='text-align:center;'><button onclick='history.back();' data-inline="true">Done</button></div>
+           </div>          
+       </div><!-- /hvac -->
+       
+       <div id="hvac03" data-role="page" data-theme="a">
+           
+           <div data-role="header">
+               <h1>Master Bed</h1>
+           </div>
+           
+           <div data-role="content">
+              <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a">
+                  <p><span class="mint">65</span><br/>
+                    <button onclick='newSetPoint(this);'>+</button>
+                    <button onclick='newSetPoint(this);'>-</button>
+                  </p>
+                </div>
+                <div class="ui-block-b">
+                  <h3 class="temp">78</h3>
+                </div>
+                <div class="ui-block-c">
+                  <p><span class="maxt">80</span><br/>
+                    <button onclick='newSetPoint(this);'>+</button>
+                    <button onclick='newSetPoint(this);'>-</button>
+                  </p>
+                </div>
+              </div><!-- grid -->
+               <div data-role="navbar">
+                   <ul class="mode">
+                       <li><a href="#">Auto</a></li>
+                       <li><a href="#">Cool</a></li>
+                       <li><a href="#">Heat</a></li>
+                       <li><a href="#">Off</a></li>
+                   </ul>
+               </div>
+               <div style='text-align:center;'><button onclick='history.back();' data-inline="true">Done</button></div>
+           </div>          
+       </div><!-- /hvac -->
+
+       <div data-role="page" id="needRefresh" data-title="Refresh" data-theme="a">
+      
+        <div data-role="content">  
+          <div class="doRefresh">
+            <p>Connection Lost - Refresh below</p>
+            <button data-inline="true" data-theme="c" onclick='properRefresh();'>Refresh</button>  
+          </div>
+        </div><!-- /content -->
+      
+      </div><!-- /page -->
+
+      <div data-role="page" id="log" data-title="Log" data-theme="a">
+      
+        <div data-role="content">  
+          <div >
+            <pre id="log"></pre> 
+          </div>
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed" data-id="hc_footer">
+               <div data-role="navbar" >
+                   <ul>
+                       <li><a href="#shades">Shades</a></li> 
+                        <li><a href="#locks">Door Locks</a></li> 
+                        <li><a href="#music">Music</a></li> 
+                   </ul>
+               </div><!-- /navbar -->
+           </div>
+      
+      </div><!-- /page -->
+
+       
+    </body>
+</html>    
+
+
